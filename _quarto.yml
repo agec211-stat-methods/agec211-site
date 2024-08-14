@@ -13,7 +13,7 @@ website:
     style: docked
     pinned: true
     seacrh: true
-    logo: "plot/econ148-hex-logo.png"
+    logo: "plot/agec211-hex-logo.png"
     contents:
       - href: "index.qmd"
         text: "Home"
