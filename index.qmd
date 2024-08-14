@@ -1,0 +1,25 @@
+---
+title: "AgEc 211: Statistical Methods"
+---
+
+<br>
+
+**Class schedule:** Monday & Tuesday \| 17:00 - 18:00 <br> **Laboratory schedule:** Wednesday \| 16:00 - 19:00 <br> **Instructor:** Christopher Llones <br> **e-mail:** christopher.llones\@vsu.edu.ph <br> **Pre-requisites:** Econ 115 - Econometrics <br> **Course credits:** 3 units <br> **Number of hours:** 2 hrs lectures and 3 hrs laboratory per week <br>
+
+---
+
+### Course description
+
+Introduction to survey research and survey data analysis using R programming.
+
+### Course objectives
+
+-   Create a valid and reliable survey questionnaire and survey codebook.
+-   Perform exploratory data analysis on survey data using R programming.
+-   Perform Parametric and Non-Parametric Test on Means using R.
+-   Perform correlation analysis and build a regression model explaining relationship of certain economic variables in R.
+-   Perform regression analysis on limited dependent variables in R.
+-   Perform various techniques of multivariate data analysis in the R statistical software.
+
+
+### Course outline
