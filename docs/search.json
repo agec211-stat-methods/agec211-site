@@ -1,5 +1,27 @@
 [
   {
+    "objectID": "m4-survey-research-design.html",
+    "href": "m4-survey-research-design.html",
+    "title": "Module 1: Survey research design",
+    "section": "",
+    "text": "Methods of data collection\nSampling desing in surveys\nMeasurement issues in survey research\nQuestionnaire construction\nBasics of interviewing\nCreating codebook\nData entry\n\nView slides in new window\n\n \n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "crumbs": [
+      "Topics",
+      "Module 4: survey research design"
+    ]
+  },
+  {
+    "objectID": "m2-intro-dataviz.html",
+    "href": "m2-intro-dataviz.html",
+    "title": "Intro to data visualization using ggplot2",
+    "section": "",
+    "text": "The grammar of graphics\nDatasets and mapping\nGeometries\nStatistical transformation and plotting distribution\nPosition adjustment and scales\nCoordinates and themes\nFacets and custom plots\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "crumbs": [
+      "Topics",
+      "Module 2: Intro to data viz using ggplot2"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "AgEc 211: Statistical Methods",
@@ -10,21 +32,43 @@
     ]
   },
   {
-    "objectID": "02-m1-survey-research-design.html",
-    "href": "02-m1-survey-research-design.html",
-    "title": "Module 1: Survey research design",
-    "section": "",
-    "text": "Methods of data collection\nSampling desing in surveys\nMeasurement issues in survey research\nQuestionnaire construction\nBasics of interviewing\nCreating codebook\nData entry\n\nView slides in new window\n\n \n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
-    "crumbs": [
-      "Topics",
-      "Module 1: survey research design"
-    ]
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "m1-intro-r.html",
+    "href": "m1-intro-r.html",
+    "title": "Intro to R programming",
+    "section": "",
+    "text": "R objects\nR packages\nReading data in R\nBasic data wrangling\nView slides in new window",
+    "crumbs": [
+      "Topics",
+      "Module 1: Intro to R programming"
+    ]
+  },
+  {
+    "objectID": "m1-intro-r.html#exercises",
+    "href": "m1-intro-r.html#exercises",
+    "title": "Intro to R programming",
+    "section": "Exercises",
+    "text": "Exercises\n\nInstall R and RStudio on your computer.\nDownload the entire folder 00-module-intro-r from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.\nBefore the class start, open the RStudio and paste the following code in the console to install the required packages. Just click the clipboard icon to copy the code.\n\n\n## install required packages\ninstall.packages(c(\"janitor\", \"readxl\", \"haven\", \"tidyverse\", \"skimr\"))\n\n\n\n\n\n\n\nImportant\n\n\n\nPlease make sure to install the required packages before the class starts, as we may not have a secure internet connection. If you encounter any issues, please let me know.",
+    "crumbs": [
+      "Topics",
+      "Module 1: Intro to R programming"
+    ]
+  },
+  {
+    "objectID": "m3-reproducible-report.html",
+    "href": "m3-reproducible-report.html",
+    "title": "Reproducible report with Quarto in R",
+    "section": "",
+    "text": "Introduction to Quarto\nQuarto document elements\nExercise: generating reports\nImproving report\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "crumbs": [
+      "Topics",
+      "Module 3: Reproducible report with quarto in R"
+    ]
   }
 ]
