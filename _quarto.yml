@@ -29,13 +29,11 @@ website:
           - href: "m4-survey-research-design.qmd"
             text: "Module 4: survey research design"
           - href: ""
-            text: "Module 5: exploratory data analysis"
-          - href: ""
-            text: "Module 6: correlation and regression analysis"
-          - href: ""
-            text: "Module 7: limited dependent variable models"
-          - href: ""
-            text: "Module 8: Multivariate statistical analysis"
+            text: "Module 5: test on means, correlations and regression analysis"
+          - href: "m0-agec211-project.qmd"
+            text: "Project exercise"
+
+
 
 format:
   html:
