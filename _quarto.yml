@@ -28,7 +28,7 @@ website:
             text: "Module 3: Reproducible report with quarto in R"
           - href: "m4-survey-research-design.qmd"
             text: "Module 4: survey research design"
-          - href: ""
+          - href: "m5-test-means-corr-reg.qmd"
             text: "Module 5: test on means, correlations and regression analysis"
           - href: "m0-agec211-project.qmd"
             text: "Project exercise"

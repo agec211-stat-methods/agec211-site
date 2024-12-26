@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://agec211-stat-methods.github.io/agec211-site/m4-survey-research-design.html</loc>
+    <loc>https://agec211-stat-methods.github.io/agec211-site/m5-test-means-corr-reg.html</loc>
+    <lastmod>2024-12-26T03:53:33.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agec211-stat-methods.github.io/agec211-site/m3-reproducible-report.html</loc>
     <lastmod>2024-12-24T02:06:46.573Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agec211-stat-methods.github.io/agec211-site/m2-intro-dataviz.html</loc>
-    <lastmod>2024-12-24T02:06:46.573Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agec211-stat-methods.github.io/agec211-site/m0-agec211-project.html</loc>
-    <lastmod>2024-12-24T02:26:46.835Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agec211-stat-methods.github.io/agec211-site/about.html</loc>
-    <lastmod>2024-12-24T02:06:46.527Z</lastmod>
-  </url>
-  <url>
-    <loc>https://agec211-stat-methods.github.io/agec211-site/index.html</loc>
-    <lastmod>2024-12-24T02:06:46.571Z</lastmod>
   </url>
   <url>
     <loc>https://agec211-stat-methods.github.io/agec211-site/m1-intro-r.html</loc>
     <lastmod>2024-12-24T02:06:46.571Z</lastmod>
   </url>
   <url>
-    <loc>https://agec211-stat-methods.github.io/agec211-site/m3-reproducible-report.html</loc>
+    <loc>https://agec211-stat-methods.github.io/agec211-site/index.html</loc>
+    <lastmod>2024-12-24T02:06:46.571Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agec211-stat-methods.github.io/agec211-site/about.html</loc>
+    <lastmod>2024-12-24T02:06:46.527Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agec211-stat-methods.github.io/agec211-site/m0-agec211-project.html</loc>
+    <lastmod>2024-12-24T02:26:46.835Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agec211-stat-methods.github.io/agec211-site/m2-intro-dataviz.html</loc>
+    <lastmod>2024-12-24T02:06:46.573Z</lastmod>
+  </url>
+  <url>
+    <loc>https://agec211-stat-methods.github.io/agec211-site/m4-survey-research-design.html</loc>
     <lastmod>2024-12-24T02:06:46.573Z</lastmod>
   </url>
 </urlset>
