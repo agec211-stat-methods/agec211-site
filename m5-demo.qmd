@@ -1,45 +1,8 @@
 ---
-title: "Test on means, correlations and regression analysis"
+title: "Module 5: Test on mean, correlation and regression analysis"
+format: html
+editor: visual
 ---
-
-1.  Introduction to hypothesis testing
-2.  Parametric vs non-parametric tests
-3.  Independent samples t-test
-4.  Paired samples t-test
-5.  One-way ANOVA
-6.  Two-way ANOVA
-7.  Chi-square test
-8.  Correlation
-9.  Regression analysis
-
-<a href="https://agec211-stat-methods.github.io/agec211-lecture/module-5-efa" target="_blank" class="btn-slides">View slides in new window</a>
-
-::: {.box style="padding-bottom:56.25%; position:relative; display:block; width: 100%"}
-<iframe width="100%" height="100%" src="https://agec211-stat-methods.github.io/agec211-lecture/module-5-efa" frameborder="0" allowfullscreen style="position:absolute; top:0; left: 0">
-
-</iframe>
-:::
-
-:::: callout-tip
-## Presentation keyboard shortcuts
-
-::: text-line-space
-<ul>
-
-<li>Use <kbd>←</kbd> and <kbd>→</kbd> to navigate through the slides</li>
-
-<li>Use <kbd>F</kbd> to toggle full screen</li>
-
-<li>Use <kbd>O</kbd> to view an overview of all slides</li>
-
-<li>Use <kbd>?</kbd> to see a list of other shortcuts</li>
-
-</ul>
-:::
-::::
-
-
-# Class demonstration
 
 # Indepedent t-test
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Test on means, correlations and regression analysis – AgEc 211</title>
+<title>Module 5: Test on mean, correlation and regression analysis – AgEc 211</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,8 +63,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./m0-agec211-project.html" rel="next">
-<link href="./m4-survey-research-design.html" rel="prev">
 <link href="./plot/agec211-hex-logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -146,7 +144,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./m1-intro-r.html">Topics</a></li><li class="breadcrumb-item"><a href="./m5-test-means-corr-reg.html">Module 5: test on means, correlations and regression analysis</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Module 5: Test on mean, correlation and regression analysis</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -215,7 +213,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./m5-test-means-corr-reg.html" class="sidebar-item-text sidebar-link active">
+  <a href="./m5-test-means-corr-reg.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Module 5: test on means, correlations and regression analysis</span></a>
   </div>
 </li>
@@ -237,8 +235,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#class-demonstration" id="toc-class-demonstration" class="nav-link active" data-scroll-target="#class-demonstration">Class demonstration</a></li>
-  <li><a href="#indepedent-t-test" id="toc-indepedent-t-test" class="nav-link" data-scroll-target="#indepedent-t-test">Indepedent t-test</a>
+  <li><a href="#indepedent-t-test" id="toc-indepedent-t-test" class="nav-link active" data-scroll-target="#indepedent-t-test">Indepedent t-test</a>
   <ul class="collapse">
   <li><a href="#mann-whitney-u-test" id="toc-mann-whitney-u-test" class="nav-link" data-scroll-target="#mann-whitney-u-test">Mann-whitney U test</a></li>
   </ul></li>
@@ -264,9 +261,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./m1-intro-r.html">Topics</a></li><li class="breadcrumb-item"><a href="./m5-test-means-corr-reg.html">Module 5: test on means, correlations and regression analysis</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Test on means, correlations and regression analysis</h1>
+<h1 class="title">Module 5: Test on mean, correlation and regression analysis</h1>
 </div>
 
 
@@ -283,53 +280,6 @@ window.Quarto = {
 </header>
 
 
-<ol type="1">
-<li>Introduction to hypothesis testing</li>
-<li>Parametric vs non-parametric tests</li>
-<li>Independent samples t-test</li>
-<li>Paired samples t-test</li>
-<li>One-way ANOVA</li>
-<li>Two-way ANOVA</li>
-<li>Chi-square test</li>
-<li>Correlation</li>
-<li>Regression analysis</li>
-</ol>
-<p><a href="https://agec211-stat-methods.github.io/agec211-lecture/module-5-efa" target="_blank" class="btn-slides">View slides in new window</a></p>
-<div class="box" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
-<iframe width="100%" height="100%" src="https://agec211-stat-methods.github.io/agec211-lecture/module-5-efa" frameborder="0" allowfullscreen="" style="position:absolute; top:0; left: 0">
-</iframe>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Presentation keyboard shortcuts
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div class="text-line-space">
-<ul>
-<li>
-Use <kbd>←</kbd> and <kbd>→</kbd> to navigate through the slides
-</li>
-<li>
-Use <kbd>F</kbd> to toggle full screen
-</li>
-<li>
-Use <kbd>O</kbd> to view an overview of all slides
-</li>
-<li>
-Use <kbd>?</kbd> to see a list of other shortcuts
-</li>
-</ul>
-</div>
-</div>
-</div>
-<section id="class-demonstration" class="level1">
-<h1>Class demonstration</h1>
-</section>
 <section id="indepedent-t-test" class="level1">
 <h1>Indepedent t-test</h1>
 <p>Using the mpg dataset, test whether there is a statistically significant difference in the hwy miles per gallon (hwy) between 4-cylinder and 8-cylinder automobiles.</p>
@@ -473,7 +423,7 @@ mean in group 4 mean in group 8
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="m5-test-means-corr-reg_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="m5-demo_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -613,7 +563,7 @@ mean difference
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="m5-test-means-corr-reg_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="m5-demo_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -774,7 +724,7 @@ $group
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="m5-test-means-corr-reg_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="m5-demo_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1606,18 +1556,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./m4-survey-research-design.html" class="pagination-link" aria-label="Module 4: survey research design">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Module 4: survey research design</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./m0-agec211-project.html" class="pagination-link" aria-label="Project exercise">
-        <span class="nav-page-text">Project exercise</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 

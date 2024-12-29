@@ -4,72 +4,99 @@
     "href": "m5-test-means-corr-reg.html",
     "title": "Test on means, correlations and regression analysis",
     "section": "",
-    "text": "Introduction to hypothesis testing\nParametric vs non-parametric tests\nIndependent samples t-test\nPaired samples t-test\nOne-way ANOVA\nTwo-way ANOVA\nChi-square test\nCorrelation\nRegression analysis\n\nView slides in new window\n\n\n\n\n\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "text": "Introduction to hypothesis testing\nParametric vs non-parametric tests\nIndependent samples t-test\nPaired samples t-test\nOne-way ANOVA\nTwo-way ANOVA\nChi-square test\nCorrelation\nRegression analysis\nView slides in new window",
     "crumbs": [
       "Topics",
       "Module 5: test on means, correlations and regression analysis"
     ]
   },
   {
-    "objectID": "m3-reproducible-report.html",
-    "href": "m3-reproducible-report.html",
-    "title": "Reproducible report with Quarto in R",
-    "section": "",
-    "text": "Introduction to Quarto\nQuarto document elements\nExercise: generating reports\nImproving report\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "objectID": "m5-test-means-corr-reg.html#mann-whitney-u-test",
+    "href": "m5-test-means-corr-reg.html#mann-whitney-u-test",
+    "title": "Test on means, correlations and regression analysis",
+    "section": "Mann-whitney U test",
+    "text": "Mann-whitney U test\nResults: W = 5569.5, p-value &lt; 0.05\nDecision rule: using 5% level of significance, we reject the null hypothesis and conclude that there is a statistically significant difference in the hwy miles per gallon (hwy) between 4-cylinder and 8-cylinder automobiles.\n\n# Mann-Whitney U test\nwilcox.test(data = mpg_dta, hwy ~ cyl)\n\n\n    Wilcoxon rank sum test with continuity correction\n\ndata:  hwy by cyl\nW = 5569.5, p-value &lt; 2.2e-16\nalternative hypothesis: true location shift is not equal to 0",
     "crumbs": [
       "Topics",
-      "Module 3: Reproducible report with quarto in R"
+      "Module 5: test on means, correlations and regression analysis"
     ]
   },
   {
-    "objectID": "m1-intro-r.html",
-    "href": "m1-intro-r.html",
-    "title": "Intro to R programming",
-    "section": "",
-    "text": "R objects\nR packages\nReading data in R\nBasic data wrangling\nView slides in new window",
+    "objectID": "m5-test-means-corr-reg.html#post-hoc-test",
+    "href": "m5-test-means-corr-reg.html#post-hoc-test",
+    "title": "Test on means, correlations and regression analysis",
+    "section": "Post-hoc test",
+    "text": "Post-hoc test\n\n# post-hoc\npairwise.wilcox.test(exam_data$exam, exam_data$group, p.adjust.method = \"BH\")\n\nWarning in wilcox.test.default(xi, xj, paired = paired, ...): cannot compute\nexact p-value with ties\nWarning in wilcox.test.default(xi, xj, paired = paired, ...): cannot compute\nexact p-value with ties\nWarning in wilcox.test.default(xi, xj, paired = paired, ...): cannot compute\nexact p-value with ties\n\n\n\n    Pairwise comparisons using Wilcoxon rank sum test with continuity correction \n\ndata:  exam_data$exam and exam_data$group \n\n  1       2      \n2 0.05802 -      \n3 0.00054 0.01080\n\nP value adjustment method: BH",
     "crumbs": [
       "Topics",
-      "Module 1: Intro to R programming"
+      "Module 5: test on means, correlations and regression analysis"
     ]
   },
   {
-    "objectID": "m1-intro-r.html#exercises",
-    "href": "m1-intro-r.html#exercises",
-    "title": "Intro to R programming",
-    "section": "Exercises",
-    "text": "Exercises\n\nInstall R and RStudio on your computer.\nDownload the entire folder 00-module-intro-r from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.\nDownload the entire folder 00-module-intro-r from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.\nBefore the class start, open the RStudio and paste the following code in the console to install the required packages. Just click the clipboard icon to copy the code.\n\n\n## install required packages\ninstall.packages(c(\"janitor\", \"readxl\", \"haven\", \"tidyverse\", \"skimr\"))\n\n\n\n\n\n\n\nImportant\n\n\n\nPlease make sure to install the required packages before the class starts, as we may not have a secure internet connection. If you encounter any issues, please let me know.",
+    "objectID": "m5-test-means-corr-reg.html#pearson-correlation",
+    "href": "m5-test-means-corr-reg.html#pearson-correlation",
+    "title": "Test on means, correlations and regression analysis",
+    "section": "Pearson correlation",
+    "text": "Pearson correlation\nTest if there is a relationship between mpg and car weight using mtcars dataset.\nStep 1: load the data\n\n# load data\nmtcars_data &lt;- mtcars\n\nmtcars_data\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n\nStep 2: Normality test\nResults: both wt and mpg have p-values &gt; 0.05\nDecision: Fail to reject Ho and conclude that the data is normally distributed.\n\n# normality test for mpg\nshapiro.test(mtcars_data$mpg)\n\n\n    Shapiro-Wilk normality test\n\ndata:  mtcars_data$mpg\nW = 0.94756, p-value = 0.1229\n\n# normality test for wt\nshapiro.test(mtcars_data$wt)\n\n\n    Shapiro-Wilk normality test\n\ndata:  mtcars_data$wt\nW = 0.94326, p-value = 0.09265\n\n\nStep 3: Pearson correlation\nResults: Correlation coefficient = -0.867, p-value &lt; 0.05\nInterpretation: There is a strong negative correlation/association between mpg and wt. As the weight of the car increases, the miles per gallon decreases.\n\n# Pearson correlation\ncor.test(mtcars_data$mpg, mtcars_data$wt, method = \"pearson\")\n\n\n    Pearson's product-moment correlation\n\ndata:  mtcars_data$mpg and mtcars_data$wt\nt = -9.559, df = 30, p-value = 1.294e-10\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n -0.9338264 -0.7440872\nsample estimates:\n       cor \n-0.8676594",
     "crumbs": [
       "Topics",
-      "Module 1: Intro to R programming"
+      "Module 5: test on means, correlations and regression analysis"
     ]
   },
   {
-    "objectID": "m1-intro-r.html#class-demonstration-copy",
-    "href": "m1-intro-r.html#class-demonstration-copy",
-    "title": "Intro to R programming",
-    "section": "Class demonstration copy",
-    "text": "Class demonstration copy\n\n# INTRO TO R AND BASIC DATA WRANGLING ----\n\n# working directory\n## note: different working directory \nsetwd(\"D:/Githu-repository/agec211-statistical-methods/agec211-class-demo/agec211-statistical-methods/00-module-intro-r\")\n\n## Install packages\n\n\n# 1. R Packages ----\nlibrary(haven)\nlibrary(tidyverse)\nlibrary(readxl)\nlibrary(gapminder)\nlibrary(plotly)\n\n# 2. Set the working directory ----\n\n\n# 3. Reading data into R ----\n\n## 3.1 CSV files\n### Load swimming_pools.csv files using the read_csv() function\nswimming_pool_dta &lt;- read_csv(\"sample_dataset/swimming_pools.csv\")\nswimming_pool_dta\n\nselect(hbat_sav, id, ends_with(\"2\"))\n\n\n\n### Load potatoes.csv using read_csv() and read.csv()\n#### Observe the difference in the output\nread.csv(\"sample_dataset/swimming_pools.csv\")\n\n## 3.2 Excel files\n### Load urban_pop files and use the read_xls() and read_excel() functions\n### Save the data into a variable named urban_pop\n\nurban_pop_dta &lt;- read_xls(\"sample_dataset/urbanpop.xls\")\nurban_pop_dta &lt;- read_excel(\"sample_dataset/urbanpop.xlsx\")\n\n\n### Transform the urban_pop data into long-format\n\n\n## 3.2 SPSS files\n### Load HBAT.sav\n## Alt + -\nhbat_sav &lt;- read_sav(\"sample_dataset/HBAT.sav\")\n\nhbat_sav\nglimpse(hbat_sav)\n\n\n### Load data from Stata online @ https://www.stata-press.com/data/r9/u.html\n### Use the link http://www.stata-press.com/data/r9/auto.dta and save the data into a variable named auto\nauto_dta &lt;- read_dta(\"http://www.stata-press.com/data/r9/auto.dta\")\n\nauto_dta\n\nggplot(data = auto_dta,\n       aes(price, weight)) +\n  geom_point() +\n  geom_smooth()\n\n\n## 3.3 Load SAS data\n### Read the SAS data from the eventrepository.sas7bdat file\n### Clean the variable names using the clean_names() function from janitor package\n\neven_dta &lt;- read_sas(\"sample_dataset/eventrepository.sas7bdat\")\n\n\n\n# 4. Basic data wrangling with tidyverse ----\n### Use gapminder dataset from gapminder package and save it into a variable named gapminder_data\n\n## 4.1 filter() ----\n### Using the gapminder_data, filter dataset for the year 1957\ngapminder\ngapminder_1957 &lt;- filter(gapminder, year == 1957)\n\n\n### Now, filter for Philippines in 2002\nfilter(gapminder, year == 2002, country == \"Philippines\")\n\n\n### Filter for the year 1957, then arrange in descending order of population\ngapminder_1957 &lt;- filter(gapminder, year == 1957)\narrange(gapminder_1957, desc(pop))\n\ngapminder %&gt;% \n  filter(year == 1957) %&gt;% \n  arrange(desc(pop))\n\n\n\n## 4.2 mutate() ----\n### Use mutate to compute for GDP\ngapminder_gdp_dta &lt;- mutate(gapminder, GDP = pop * gdpPercap)\n\n\n### Filter for year 2007, compute GDP in Million and arrange data by descending life expectancy\ngapminder_2007 &lt;- filter(gapminder, year == 2007)\ngapminder_pop_mill_dta &lt;- mutate(gapminder_2007, GDP = (pop * gdpPercap) / 1e6)\ngapminder_pop_mill_arranged &lt;- arrange(gapminder_pop_mill_dta, desc(lifeExp))\n\n### Ctrl + Shift + M\ngapminder_arranged &lt;- \n  gapminder %&gt;% \n  filter(year == 2007) %&gt;% \n  mutate(GDP = (pop * gdpPercap) / 1e6) %&gt;% \n  arrange(desc(lifeExp))\n\ngapminder_arranged\n\n\n## 4.6 grouping and summarizing ----\n### Summarise to find the median life expectancy\ngapminder %&gt;% summarise(median_lifeExp = median(lifeExp))\n\ngapminder %&gt;% \n  group_by(year) %&gt;% \n  summarise(median_lifeExp = median(lifeExp))\n\ngapminder %&gt;% \n  group_by(year) %&gt;% \n  summarise(median_lifeExp = median(lifeExp)) %&gt;% \n  ggplot(aes(year, median_lifeExp)) +\n  geom_point() +\n  geom_line()\n  \n\n### Filter for 1957 then summarise the median life expectancy\n\ngapminder %&gt;% \n  filter(year == 1957) %&gt;% \n  summarise(median_lifeExp = median(lifeExp))\n\n\n### Find median life expectancy and maximum GDP per capita in each year\ngapminder %&gt;% \n  group_by(year) %&gt;% \n  summarise(median_lifeExp = median(lifeExp),\n            max_GDPperCap = max(gdpPercap))\n\n\n# BONUS: Let's have a sample visualization with gapminder dataset\n## Run the code below and see the output\n\ngapminder %&gt;% \n  filter(year == 2007) %&gt;% \n  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +\n  geom_point(alpha = 0.8) +\n  scale_x_log10() +\n  scale_size(range = c(0.1, 20), name = \"Population\") +\n  labs(x = \"GDP per Capita\",\n       y = \"Life Expectancy (years)\",\n       title = \"World Development in  2007\") +\n  theme_light() +\n  theme(legend.position = \"none\")\n\n\nplot_gapminder &lt;- \n  gapminder %&gt;% \n  filter(year == 2007) %&gt;% \n  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +\n  geom_point(alpha = 0.8) +\n  scale_x_log10() +\n  scale_size(range = c(0.1, 20), name = \"Population\") +\n  labs(x = \"GDP per Capita\",\n       y = \"Life Expectancy (years)\",\n       title = \"World Development in  2007\") +\n  theme_light() +\n  theme(legend.position = \"none\")\n\n\nggplotly(plot_gapminder)\n\n======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; ab7016f491a94ca40498fd58082a255490bab421",
+    "objectID": "m5-test-means-corr-reg.html#spearman-correlation",
+    "href": "m5-test-means-corr-reg.html#spearman-correlation",
+    "title": "Test on means, correlations and regression analysis",
+    "section": "Spearman correlation",
+    "text": "Spearman correlation\nAssuming the data is not normally distributed, we can use the Spearman correlation.\n\n# Spearman correlation\ncor.test(mtcars_data$mpg, mtcars_data$wt, method = \"spearman\")\n\nWarning in cor.test.default(mtcars_data$mpg, mtcars_data$wt, method =\n\"spearman\"): Cannot compute exact p-value with ties\n\n\n\n    Spearman's rank correlation rho\n\ndata:  mtcars_data$mpg and mtcars_data$wt\nS = 10292, p-value = 1.488e-11\nalternative hypothesis: true rho is not equal to 0\nsample estimates:\n      rho \n-0.886422",
     "crumbs": [
       "Topics",
-      "Module 1: Intro to R programming"
+      "Module 5: test on means, correlations and regression analysis"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AgEc 211: Statistical Methods",
-    "section": "",
-    "text": "Class schedule: Sunday | 9:00 - 16:00  Instructor: Christopher Llones  e-mail: christopher.llones@vsu.edu.ph  Pre-requisites: Basic statistics or COI  Course credits: 3 units \n\n\nCourse description\nApplication of statistical concept and tools in analyzing economic phenomena.\n\n\nCourse objectives\n\nPerform basic operation using R programming as the main statistical software\nDemonstrate how to conduct descriptive analysis using statistical software and check necessary assumptions\nDemonstrate how to conduct descriptive analysis using stistical\nConduct parametric and non-parametric tests\nTest economic relationship using correlation / regression approach using appropriate statistical software and interpret results\nApply appropriate statistical methods to investigate actual economic problems.\n\n\n\nCourse outline\n\n\n\n\n\n\n\n\n\nWeek\nTopics\nLessons\nDescriptions\n\n\n\n\n1\nIntroduction to R programming\n\nOverview of R and RStudio interface\nReading data in R\nData wrangling\n\n\nInstall R and RStudio\nFamiliarize with the user interface of R and RStudio\nData importation and basic data transformation\n\n\n\n2\nIntroduction to data visualization using ggplot2\n\nGrammar of graphics\nDatasets and mapping\nGeometries\nStatistical transformation and plotting distribution\nPosition adjustment and scales\nCoordinates and themes\nFacets and custom plots\n\n\nLearn the foundation of ggplot2.\nData preparation for visualization, mapping variables to appropriate visual elements.\nSelect the most suitable visual representation using geometric objects.\nGain insights into data distributions using statistical summaries and plots.\nControl the layout and scale of visual elements to optimize clarity and readability.\nCreate complex visualizations with multiples panels to highlight specific patterns and trends.\n\n\n\n3\nReproducible report with quarto in R\n\nIntroduction to Quarto\nQuarto documents elements\nExercise: generating reports\nImproving reports\n\n\nLearn about Quarto and its benefits for creating reproducible reports.\nUnderstand the structure and components of quarto documents.\nRender and enhance readability of data analysis reports.",
+    "objectID": "m5-test-means-corr-reg.html#simple-linear-regression",
+    "href": "m5-test-means-corr-reg.html#simple-linear-regression",
+    "title": "Test on means, correlations and regression analysis",
+    "section": "Simple linear regression",
+    "text": "Simple linear regression\n\n# load data\n\n## import synthetic data\ndf &lt;- tibble(\n  Week = 1:15,\n  Pie_Sales = c(350, 460, 350, 430, 350, 380, 430, 470, 450, 490, 340, 300, 440, 450, 300),\n  Price = c(5.50, 7.50, 8.00, 8.00, 6.80, 7.50, 4.50, 6.40, 7.00, 5.00, 7.20, 7.90, 5.90, 5.00, 7.00),\n  Advertising = c(3.3, 3.3, 3.0, 4.5, 3.0, 4.0, 3.0, 3.7, 3.5, 4.0, 3.5, 3.2, 4.0, 3.5, 2.7)\n)\n\ndf\n\n# A tibble: 15 × 4\n    Week Pie_Sales Price Advertising\n   &lt;int&gt;     &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt;\n 1     1       350   5.5         3.3\n 2     2       460   7.5         3.3\n 3     3       350   8           3  \n 4     4       430   8           4.5\n 5     5       350   6.8         3  \n 6     6       380   7.5         4  \n 7     7       430   4.5         3  \n 8     8       470   6.4         3.7\n 9     9       450   7           3.5\n10    10       490   5           4  \n11    11       340   7.2         3.5\n12    12       300   7.9         3.2\n13    13       440   5.9         4  \n14    14       450   5           3.5\n15    15       300   7           2.7\n\n\nModel: Pie sales = a + b Price\n\\[\n\\text{pie sales} = \\beta_0 - \\beta_1 Price\n\\]\n\\[\n\\text{pie sales} = 558.28 - 24.03 Price\n\\]\nInterpretation: for every 1 peso increase in Price, pie sales on average will decrease by 24.03 pies per week, holding other factors constant cet. par.\n\n# simple linear regression\nlm(data = df, Pie_Sales ~ Price) |&gt; summary()\n\n\nCall:\nlm(formula = Pie_Sales ~ Price, data = df)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-90.040 -45.040   1.977  55.926  81.977 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)   558.28      90.44   6.173 3.36e-05 ***\nPrice         -24.03      13.48  -1.783   0.0979 .  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 59.09 on 13 degrees of freedom\nMultiple R-squared:  0.1965,    Adjusted R-squared:  0.1347 \nF-statistic: 3.179 on 1 and 13 DF,  p-value: 0.09794",
     "crumbs": [
-      "Home"
+      "Topics",
+      "Module 5: test on means, correlations and regression analysis"
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "m5-test-means-corr-reg.html#multiple-linear-regression",
+    "href": "m5-test-means-corr-reg.html#multiple-linear-regression",
+    "title": "Test on means, correlations and regression analysis",
+    "section": "multiple linear regression",
+    "text": "multiple linear regression\n\n# simple linear regression\nlm(data = df, Pie_Sales ~ Price + Advertising) |&gt; summary()\n\n\nCall:\nlm(formula = Pie_Sales ~ Price + Advertising, data = df)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-63.795 -33.796  -9.088  17.175  96.155 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)  \n(Intercept)   306.53     114.25   2.683   0.0199 *\nPrice         -24.98      10.83  -2.306   0.0398 *\nAdvertising    74.13      25.97   2.855   0.0145 *\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 47.46 on 12 degrees of freedom\nMultiple R-squared:  0.5215,    Adjusted R-squared:  0.4417 \nF-statistic: 6.539 on 2 and 12 DF,  p-value: 0.01201",
+    "crumbs": [
+      "Topics",
+      "Module 5: test on means, correlations and regression analysis"
+    ]
+  },
+  {
+    "objectID": "m4-survey-research-design.html",
+    "href": "m4-survey-research-design.html",
+    "title": "Module 1: Survey research design",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Methods of data collection\nSampling desing in surveys\nMeasurement issues in survey research\nQuestionnaire construction\nBasics of interviewing\nCreating codebook\nData entry\n\nView slides in new window\n\n \n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "crumbs": [
+      "Topics",
+      "Module 4: survey research design"
+    ]
+  },
+  {
+    "objectID": "m2-intro-dataviz.html",
+    "href": "m2-intro-dataviz.html",
+    "title": "Intro to data visualization using ggplot2",
+    "section": "",
+    "text": "The grammar of graphics\nDatasets and mapping\nGeometries\nStatistical transformation and plotting distribution\nPosition adjustment and scales\nCoordinates and themes\nFacets and custom plots\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "crumbs": [
+      "Topics",
+      "Module 2: Intro to data viz using ggplot2"
+    ]
   },
   {
     "objectID": "m0-agec211-project.html#instructions",
@@ -116,25 +143,113 @@
     ]
   },
   {
-    "objectID": "m2-intro-dataviz.html",
-    "href": "m2-intro-dataviz.html",
-    "title": "Intro to data visualization using ggplot2",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "The grammar of graphics\nDatasets and mapping\nGeometries\nStatistical transformation and plotting distribution\nPosition adjustment and scales\nCoordinates and themes\nFacets and custom plots\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AgEc 211: Statistical Methods",
+    "section": "",
+    "text": "Class schedule: Sunday | 9:00 - 16:00  Instructor: Christopher Llones  e-mail: christopher.llones@vsu.edu.ph  Pre-requisites: Basic statistics or COI  Course credits: 3 units \n\n\nCourse description\nApplication of statistical concept and tools in analyzing economic phenomena.\n\n\nCourse objectives\n\nPerform basic operation using R programming as the main statistical software\nDemonstrate how to conduct descriptive analysis using statistical software and check necessary assumptions\nDemonstrate how to conduct descriptive analysis using stistical\nConduct parametric and non-parametric tests\nTest economic relationship using correlation / regression approach using appropriate statistical software and interpret results\nApply appropriate statistical methods to investigate actual economic problems.\n\n\n\nCourse outline\n\n\n\n\n\n\n\n\n\nWeek\nTopics\nLessons\nDescriptions\n\n\n\n\n1\nIntroduction to R programming\n\nOverview of R and RStudio interface\nReading data in R\nData wrangling\n\n\nInstall R and RStudio\nFamiliarize with the user interface of R and RStudio\nData importation and basic data transformation\n\n\n\n2\nIntroduction to data visualization using ggplot2\n\nGrammar of graphics\nDatasets and mapping\nGeometries\nStatistical transformation and plotting distribution\nPosition adjustment and scales\nCoordinates and themes\nFacets and custom plots\n\n\nLearn the foundation of ggplot2.\nData preparation for visualization, mapping variables to appropriate visual elements.\nSelect the most suitable visual representation using geometric objects.\nGain insights into data distributions using statistical summaries and plots.\nControl the layout and scale of visual elements to optimize clarity and readability.\nCreate complex visualizations with multiples panels to highlight specific patterns and trends.\n\n\n\n3\nReproducible report with quarto in R\n\nIntroduction to Quarto\nQuarto documents elements\nExercise: generating reports\nImproving reports\n\n\nLearn about Quarto and its benefits for creating reproducible reports.\nUnderstand the structure and components of quarto documents.\nRender and enhance readability of data analysis reports.",
     "crumbs": [
-      "Topics",
-      "Module 2: Intro to data viz using ggplot2"
+      "Home"
     ]
   },
   {
-    "objectID": "m4-survey-research-design.html",
-    "href": "m4-survey-research-design.html",
-    "title": "Module 1: Survey research design",
+    "objectID": "m1-intro-r.html",
+    "href": "m1-intro-r.html",
+    "title": "Intro to R programming",
     "section": "",
-    "text": "Methods of data collection\nSampling desing in surveys\nMeasurement issues in survey research\nQuestionnaire construction\nBasics of interviewing\nCreating codebook\nData entry\n\nView slides in new window\n\n \n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "text": "R objects\nR packages\nReading data in R\nBasic data wrangling\nView slides in new window",
     "crumbs": [
       "Topics",
-      "Module 4: survey research design"
+      "Module 1: Intro to R programming"
     ]
+  },
+  {
+    "objectID": "m1-intro-r.html#exercises",
+    "href": "m1-intro-r.html#exercises",
+    "title": "Intro to R programming",
+    "section": "Exercises",
+    "text": "Exercises\n\nInstall R and RStudio on your computer.\nDownload the entire folder 00-module-intro-r from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.\nDownload the entire folder 00-module-intro-r from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.\nBefore the class start, open the RStudio and paste the following code in the console to install the required packages. Just click the clipboard icon to copy the code.\n\n\n## install required packages\ninstall.packages(c(\"janitor\", \"readxl\", \"haven\", \"tidyverse\", \"skimr\"))\n\n\n\n\n\n\n\nImportant\n\n\n\nPlease make sure to install the required packages before the class starts, as we may not have a secure internet connection. If you encounter any issues, please let me know.",
+    "crumbs": [
+      "Topics",
+      "Module 1: Intro to R programming"
+    ]
+  },
+  {
+    "objectID": "m1-intro-r.html#class-demonstration-copy",
+    "href": "m1-intro-r.html#class-demonstration-copy",
+    "title": "Intro to R programming",
+    "section": "Class demonstration copy",
+    "text": "Class demonstration copy\n\n# INTRO TO R AND BASIC DATA WRANGLING ----\n\n# working directory\n## note: different working directory \nsetwd(\"D:/Githu-repository/agec211-statistical-methods/agec211-class-demo/agec211-statistical-methods/00-module-intro-r\")\n\n## Install packages\n\n\n# 1. R Packages ----\nlibrary(haven)\nlibrary(tidyverse)\nlibrary(readxl)\nlibrary(gapminder)\nlibrary(plotly)\n\n# 2. Set the working directory ----\n\n\n# 3. Reading data into R ----\n\n## 3.1 CSV files\n### Load swimming_pools.csv files using the read_csv() function\nswimming_pool_dta &lt;- read_csv(\"sample_dataset/swimming_pools.csv\")\nswimming_pool_dta\n\nselect(hbat_sav, id, ends_with(\"2\"))\n\n\n\n### Load potatoes.csv using read_csv() and read.csv()\n#### Observe the difference in the output\nread.csv(\"sample_dataset/swimming_pools.csv\")\n\n## 3.2 Excel files\n### Load urban_pop files and use the read_xls() and read_excel() functions\n### Save the data into a variable named urban_pop\n\nurban_pop_dta &lt;- read_xls(\"sample_dataset/urbanpop.xls\")\nurban_pop_dta &lt;- read_excel(\"sample_dataset/urbanpop.xlsx\")\n\n\n### Transform the urban_pop data into long-format\n\n\n## 3.2 SPSS files\n### Load HBAT.sav\n## Alt + -\nhbat_sav &lt;- read_sav(\"sample_dataset/HBAT.sav\")\n\nhbat_sav\nglimpse(hbat_sav)\n\n\n### Load data from Stata online @ https://www.stata-press.com/data/r9/u.html\n### Use the link http://www.stata-press.com/data/r9/auto.dta and save the data into a variable named auto\nauto_dta &lt;- read_dta(\"http://www.stata-press.com/data/r9/auto.dta\")\n\nauto_dta\n\nggplot(data = auto_dta,\n       aes(price, weight)) +\n  geom_point() +\n  geom_smooth()\n\n\n## 3.3 Load SAS data\n### Read the SAS data from the eventrepository.sas7bdat file\n### Clean the variable names using the clean_names() function from janitor package\n\neven_dta &lt;- read_sas(\"sample_dataset/eventrepository.sas7bdat\")\n\n\n\n# 4. Basic data wrangling with tidyverse ----\n### Use gapminder dataset from gapminder package and save it into a variable named gapminder_data\n\n## 4.1 filter() ----\n### Using the gapminder_data, filter dataset for the year 1957\ngapminder\ngapminder_1957 &lt;- filter(gapminder, year == 1957)\n\n\n### Now, filter for Philippines in 2002\nfilter(gapminder, year == 2002, country == \"Philippines\")\n\n\n### Filter for the year 1957, then arrange in descending order of population\ngapminder_1957 &lt;- filter(gapminder, year == 1957)\narrange(gapminder_1957, desc(pop))\n\ngapminder %&gt;% \n  filter(year == 1957) %&gt;% \n  arrange(desc(pop))\n\n\n\n## 4.2 mutate() ----\n### Use mutate to compute for GDP\ngapminder_gdp_dta &lt;- mutate(gapminder, GDP = pop * gdpPercap)\n\n\n### Filter for year 2007, compute GDP in Million and arrange data by descending life expectancy\ngapminder_2007 &lt;- filter(gapminder, year == 2007)\ngapminder_pop_mill_dta &lt;- mutate(gapminder_2007, GDP = (pop * gdpPercap) / 1e6)\ngapminder_pop_mill_arranged &lt;- arrange(gapminder_pop_mill_dta, desc(lifeExp))\n\n### Ctrl + Shift + M\ngapminder_arranged &lt;- \n  gapminder %&gt;% \n  filter(year == 2007) %&gt;% \n  mutate(GDP = (pop * gdpPercap) / 1e6) %&gt;% \n  arrange(desc(lifeExp))\n\ngapminder_arranged\n\n\n## 4.6 grouping and summarizing ----\n### Summarise to find the median life expectancy\ngapminder %&gt;% summarise(median_lifeExp = median(lifeExp))\n\ngapminder %&gt;% \n  group_by(year) %&gt;% \n  summarise(median_lifeExp = median(lifeExp))\n\ngapminder %&gt;% \n  group_by(year) %&gt;% \n  summarise(median_lifeExp = median(lifeExp)) %&gt;% \n  ggplot(aes(year, median_lifeExp)) +\n  geom_point() +\n  geom_line()\n  \n\n### Filter for 1957 then summarise the median life expectancy\n\ngapminder %&gt;% \n  filter(year == 1957) %&gt;% \n  summarise(median_lifeExp = median(lifeExp))\n\n\n### Find median life expectancy and maximum GDP per capita in each year\ngapminder %&gt;% \n  group_by(year) %&gt;% \n  summarise(median_lifeExp = median(lifeExp),\n            max_GDPperCap = max(gdpPercap))\n\n\n# BONUS: Let's have a sample visualization with gapminder dataset\n## Run the code below and see the output\n\ngapminder %&gt;% \n  filter(year == 2007) %&gt;% \n  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +\n  geom_point(alpha = 0.8) +\n  scale_x_log10() +\n  scale_size(range = c(0.1, 20), name = \"Population\") +\n  labs(x = \"GDP per Capita\",\n       y = \"Life Expectancy (years)\",\n       title = \"World Development in  2007\") +\n  theme_light() +\n  theme(legend.position = \"none\")\n\n\nplot_gapminder &lt;- \n  gapminder %&gt;% \n  filter(year == 2007) %&gt;% \n  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop)) +\n  geom_point(alpha = 0.8) +\n  scale_x_log10() +\n  scale_size(range = c(0.1, 20), name = \"Population\") +\n  labs(x = \"GDP per Capita\",\n       y = \"Life Expectancy (years)\",\n       title = \"World Development in  2007\") +\n  theme_light() +\n  theme(legend.position = \"none\")\n\n\nggplotly(plot_gapminder)\n\n======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; ab7016f491a94ca40498fd58082a255490bab421",
+    "crumbs": [
+      "Topics",
+      "Module 1: Intro to R programming"
+    ]
+  },
+  {
+    "objectID": "m3-reproducible-report.html",
+    "href": "m3-reproducible-report.html",
+    "title": "Reproducible report with Quarto in R",
+    "section": "",
+    "text": "Introduction to Quarto\nQuarto document elements\nExercise: generating reports\nImproving report\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
+    "crumbs": [
+      "Topics",
+      "Module 3: Reproducible report with quarto in R"
+    ]
+  },
+  {
+    "objectID": "m5-demo.html",
+    "href": "m5-demo.html",
+    "title": "Module 5: Test on mean, correlation and regression analysis",
+    "section": "",
+    "text": "Using the mpg dataset, test whether there is a statistically significant difference in the hwy miles per gallon (hwy) between 4-cylinder and 8-cylinder automobiles.\nStep 1: load the dataset\n\n# libraries\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(car)\n\nLoading required package: carData\n\nAttaching package: 'car'\n\nThe following object is masked from 'package:dplyr':\n\n    recode\n\nThe following object is masked from 'package:purrr':\n\n    some\n\nlibrary(ggstatsplot)\n\nYou can cite this package as:\n     Patil, I. (2021). Visualizations with statistical details: The 'ggstatsplot' approach.\n     Journal of Open Source Software, 6(61), 3167, doi:10.21105/joss.03167\n\nlibrary(report)\n\nWarning: package 'report' was built under R version 4.4.2\n\n\n\n# load data\nmpg_dta &lt;- ggplot2::mpg |&gt; \n  filter(cyl %in% c(4, 8)) |&gt; \n  mutate(cyl = as.factor(cyl))\n\nStep 2: Normality test\n\nHo: The data is normally distributed\nHa: The data is not normally distributed\n\nResult: The data is not normally distributed Decision: Reject Ho and use a non-parametric tests (Mann-Whitney U test)\n\n# normality test\nmpg_dta |&gt; \n  group_by(cyl) |&gt; \n  summarise(\n    shapiro_test = shapiro.test(hwy)$statistic,\n    p_value = shapiro.test(hwy)$p.value\n  )\n\n# A tibble: 2 × 3\n  cyl   shapiro_test   p_value\n  &lt;fct&gt;        &lt;dbl&gt;     &lt;dbl&gt;\n1 4            0.919 0.0000756\n2 8            0.924 0.000390 \n\n\nStep 3: test for homogeneity of variance\n\nHo: The data has equal variance\nHa: The data does not have equal variance\n\nDecision: using 5% level of significance, we fail to reject the null hypothesis and conclude that the data has equal variance.\n\n# homogeneity of variance\n\nleveneTest(data = mpg_dta, hwy ~ cyl)\n\nLevene's Test for Homogeneity of Variance (center = median)\n       Df F value  Pr(&gt;F)  \ngroup   1   3.277 0.07227 .\n      149                  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n\nStep 4: Independent t-test\nResult: t = 17.186, df = 149, p-value &lt; 0.05\nDecision rule: using 5% level of significance, we reject the null hypothesis and conclude that there is a statistically significant difference in the hwy miles per gallon (hwy) between 4-cylinder and 8-cylinder automobiles.\n\n# independent t-test\nt.test(data = mpg_dta, hwy ~ cyl, var.equal = TRUE)\n\n\n    Two Sample t-test\n\ndata:  hwy by cyl\nt = 17.186, df = 149, p-value &lt; 2.2e-16\nalternative hypothesis: true difference in means between group 4 and group 8 is not equal to 0\n95 percent confidence interval:\n  9.889126 12.458669\nsample estimates:\nmean in group 4 mean in group 8 \n       28.80247        17.62857 \n\n\nIn case, variance are not equal, we can use the Welch’s t-test.\n\n# independent t-test\nt.test(data = mpg_dta, hwy ~ cyl, var.equal = FALSE)\n\n\n    Welch Two Sample t-test\n\ndata:  hwy by cyl\nt = 17.586, df = 144.65, p-value &lt; 2.2e-16\nalternative hypothesis: true difference in means between group 4 and group 8 is not equal to 0\n95 percent confidence interval:\n  9.918065 12.429731\nsample estimates:\nmean in group 4 mean in group 8 \n       28.80247        17.62857 \n\n\nStep 5: Visualization\n\n# visualization\nggbetweenstats(\n  data = mpg_dta,\n  x = cyl,\n  y = hwy,\n  title = \"Highway miles per gallon by cylinder\",\n  xlab = \"Cylinder\",\n  ylab = \"Highway miles per gallon\"\n)\n\n\n\n\n\n\n\n\n\n\nResults: W = 5569.5, p-value &lt; 0.05\nDecision rule: using 5% level of significance, we reject the null hypothesis and conclude that there is a statistically significant difference in the hwy miles per gallon (hwy) between 4-cylinder and 8-cylinder automobiles.\n\n# Mann-Whitney U test\nwilcox.test(data = mpg_dta, hwy ~ cyl)\n\n\n    Wilcoxon rank sum test with continuity correction\n\ndata:  hwy by cyl\nW = 5569.5, p-value &lt; 2.2e-16\nalternative hypothesis: true location shift is not equal to 0"
+  },
+  {
+    "objectID": "m5-demo.html#mann-whitney-u-test",
+    "href": "m5-demo.html#mann-whitney-u-test",
+    "title": "Module 5: Test on mean, correlation and regression analysis",
+    "section": "",
+    "text": "Results: W = 5569.5, p-value &lt; 0.05\nDecision rule: using 5% level of significance, we reject the null hypothesis and conclude that there is a statistically significant difference in the hwy miles per gallon (hwy) between 4-cylinder and 8-cylinder automobiles.\n\n# Mann-Whitney U test\nwilcox.test(data = mpg_dta, hwy ~ cyl)\n\n\n    Wilcoxon rank sum test with continuity correction\n\ndata:  hwy by cyl\nW = 5569.5, p-value &lt; 2.2e-16\nalternative hypothesis: true location shift is not equal to 0"
+  },
+  {
+    "objectID": "m5-demo.html#post-hoc-test",
+    "href": "m5-demo.html#post-hoc-test",
+    "title": "Module 5: Test on mean, correlation and regression analysis",
+    "section": "Post-hoc test",
+    "text": "Post-hoc test\n\n# post-hoc\npairwise.wilcox.test(exam_data$exam, exam_data$group, p.adjust.method = \"BH\")\n\nWarning in wilcox.test.default(xi, xj, paired = paired, ...): cannot compute\nexact p-value with ties\nWarning in wilcox.test.default(xi, xj, paired = paired, ...): cannot compute\nexact p-value with ties\nWarning in wilcox.test.default(xi, xj, paired = paired, ...): cannot compute\nexact p-value with ties\n\n\n\n    Pairwise comparisons using Wilcoxon rank sum test with continuity correction \n\ndata:  exam_data$exam and exam_data$group \n\n  1       2      \n2 0.05802 -      \n3 0.00054 0.01080\n\nP value adjustment method: BH"
+  },
+  {
+    "objectID": "m5-demo.html#pearson-correlation",
+    "href": "m5-demo.html#pearson-correlation",
+    "title": "Module 5: Test on mean, correlation and regression analysis",
+    "section": "Pearson correlation",
+    "text": "Pearson correlation\nTest if there is a relationship between mpg and car weight using mtcars dataset.\nStep 1: load the data\n\n# load data\nmtcars_data &lt;- mtcars\n\nmtcars_data\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n\nStep 2: Normality test\nResults: both wt and mpg have p-values &gt; 0.05\nDecision: Fail to reject Ho and conclude that the data is normally distributed.\n\n# normality test for mpg\nshapiro.test(mtcars_data$mpg)\n\n\n    Shapiro-Wilk normality test\n\ndata:  mtcars_data$mpg\nW = 0.94756, p-value = 0.1229\n\n# normality test for wt\nshapiro.test(mtcars_data$wt)\n\n\n    Shapiro-Wilk normality test\n\ndata:  mtcars_data$wt\nW = 0.94326, p-value = 0.09265\n\n\nStep 3: Pearson correlation\nResults: Correlation coefficient = -0.867, p-value &lt; 0.05\nInterpretation: There is a strong negative correlation/association between mpg and wt. As the weight of the car increases, the miles per gallon decreases.\n\n# Pearson correlation\ncor.test(mtcars_data$mpg, mtcars_data$wt, method = \"pearson\")\n\n\n    Pearson's product-moment correlation\n\ndata:  mtcars_data$mpg and mtcars_data$wt\nt = -9.559, df = 30, p-value = 1.294e-10\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n -0.9338264 -0.7440872\nsample estimates:\n       cor \n-0.8676594"
+  },
+  {
+    "objectID": "m5-demo.html#spearman-correlation",
+    "href": "m5-demo.html#spearman-correlation",
+    "title": "Module 5: Test on mean, correlation and regression analysis",
+    "section": "Spearman correlation",
+    "text": "Spearman correlation\nAssuming the data is not normally distributed, we can use the Spearman correlation.\n\n# Spearman correlation\ncor.test(mtcars_data$mpg, mtcars_data$wt, method = \"spearman\")\n\nWarning in cor.test.default(mtcars_data$mpg, mtcars_data$wt, method =\n\"spearman\"): Cannot compute exact p-value with ties\n\n\n\n    Spearman's rank correlation rho\n\ndata:  mtcars_data$mpg and mtcars_data$wt\nS = 10292, p-value = 1.488e-11\nalternative hypothesis: true rho is not equal to 0\nsample estimates:\n      rho \n-0.886422"
+  },
+  {
+    "objectID": "m5-demo.html#simple-linear-regression",
+    "href": "m5-demo.html#simple-linear-regression",
+    "title": "Module 5: Test on mean, correlation and regression analysis",
+    "section": "Simple linear regression",
+    "text": "Simple linear regression\n\n# load data\n\n## import synthetic data\ndf &lt;- tibble(\n  Week = 1:15,\n  Pie_Sales = c(350, 460, 350, 430, 350, 380, 430, 470, 450, 490, 340, 300, 440, 450, 300),\n  Price = c(5.50, 7.50, 8.00, 8.00, 6.80, 7.50, 4.50, 6.40, 7.00, 5.00, 7.20, 7.90, 5.90, 5.00, 7.00),\n  Advertising = c(3.3, 3.3, 3.0, 4.5, 3.0, 4.0, 3.0, 3.7, 3.5, 4.0, 3.5, 3.2, 4.0, 3.5, 2.7)\n)\n\ndf\n\n# A tibble: 15 × 4\n    Week Pie_Sales Price Advertising\n   &lt;int&gt;     &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt;\n 1     1       350   5.5         3.3\n 2     2       460   7.5         3.3\n 3     3       350   8           3  \n 4     4       430   8           4.5\n 5     5       350   6.8         3  \n 6     6       380   7.5         4  \n 7     7       430   4.5         3  \n 8     8       470   6.4         3.7\n 9     9       450   7           3.5\n10    10       490   5           4  \n11    11       340   7.2         3.5\n12    12       300   7.9         3.2\n13    13       440   5.9         4  \n14    14       450   5           3.5\n15    15       300   7           2.7\n\n\nModel: Pie sales = a + b Price\n\\[\n\\text{pie sales} = \\beta_0 - \\beta_1 Price\n\\]\n\\[\n\\text{pie sales} = 558.28 - 24.03 Price\n\\]\nInterpretation: for every 1 peso increase in Price, pie sales on average will decrease by 24.03 pies per week, holding other factors constant cet. par.\n\n# simple linear regression\nlm(data = df, Pie_Sales ~ Price) |&gt; summary()\n\n\nCall:\nlm(formula = Pie_Sales ~ Price, data = df)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-90.040 -45.040   1.977  55.926  81.977 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)   558.28      90.44   6.173 3.36e-05 ***\nPrice         -24.03      13.48  -1.783   0.0979 .  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 59.09 on 13 degrees of freedom\nMultiple R-squared:  0.1965,    Adjusted R-squared:  0.1347 \nF-statistic: 3.179 on 1 and 13 DF,  p-value: 0.09794"
+  },
+  {
+    "objectID": "m5-demo.html#multiple-linear-regression",
+    "href": "m5-demo.html#multiple-linear-regression",
+    "title": "Module 5: Test on mean, correlation and regression analysis",
+    "section": "multiple linear regression",
+    "text": "multiple linear regression\n\n# simple linear regression\nlm(data = df, Pie_Sales ~ Price + Advertising) |&gt; summary()\n\n\nCall:\nlm(formula = Pie_Sales ~ Price + Advertising, data = df)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-63.795 -33.796  -9.088  17.175  96.155 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)  \n(Intercept)   306.53     114.25   2.683   0.0199 *\nPrice         -24.98      10.83  -2.306   0.0398 *\nAdvertising    74.13      25.97   2.855   0.0145 *\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 47.46 on 12 degrees of freedom\nMultiple R-squared:  0.5215,    Adjusted R-squared:  0.4417 \nF-statistic: 6.539 on 2 and 12 DF,  p-value: 0.01201"
   }
 ]
