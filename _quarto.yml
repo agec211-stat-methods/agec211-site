@@ -26,13 +26,13 @@ website:
             text: "Module 2: Intro to data viz using ggplot2"
           - href: "m3-reproducible-report.qmd"
             text: "Module 3: Reproducible reports with Quarto"
-          - href: "index.qmd"
+          - href: "m4-eda.qmd"
             text: "Module 4: Exploratory data analysis (EDA)"
-          - href: "index.qmd"
+          - href: "m5-tests-on-means.qmd"
             text: "Module 5: Tests on means"
-          - href: "index.qmd"
+          - href: "m6-correlations.qmd"
             text: "Module 6: Correlations"
-          - href: "index.qmd"
+          - href: "m7-regression.qmd"
             text: "Module 6: Multiple regression analysis"
 
 

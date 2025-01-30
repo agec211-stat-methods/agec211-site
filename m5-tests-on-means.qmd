@@ -1,0 +1,34 @@
+---
+title: "Tests on means"
+---
+
+1.  Introduction to hypothesis testisng
+2. Parametric vs non-parametric tests
+3. Independent sample t-tests
+4. Paired sample t-test
+5. One-way ANOVA
+6. Chi-square test
+
+<a href="https://agec211-stat-methods.github.io/agec211-lecture/module5-tests-on-means" target="_blank" class="btn-slides">View slides in new window</a>
+
+::: {.box style="padding-bottom:56.25%; position:relative; display:block; width: 100%"}
+<iframe width="100%" height="100%" src="https://agec211-stat-methods.github.io/agec211-lecture/module5-tests-on-means" frameborder="0" allowfullscreen style="position:absolute; top:0; left: 0">
+
+</iframe>
+:::
+
+#### Presentation keyboard shortcuts
+
+::: text-line-space
+<ul>
+
+<li>Use <kbd>←</kbd> and <kbd>→</kbd> to navigate through the slides</li>
+
+<li>Use <kbd>F</kbd> to toggle full screen</li>
+
+<li>Use <kbd>O</kbd> to view an overview of all slides</li>
+
+<li>Use <kbd>?</kbd> to see a list of other shortcuts</li>
+
+</ul>
+:::

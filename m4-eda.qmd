@@ -1,0 +1,33 @@
+---
+title: "Exploratory data analysis (EDA)"
+---
+
+1. Overview of EDA
+2. Centrality and variability
+3. Amounts and proportions
+4. Comparisons
+5. Trends
+
+<a href="https://agec211-stat-methods.github.io/agec211-lecture/module4-eda" target="_blank" class="btn-slides">View slides in new window</a>
+
+::: {.box style="padding-bottom:56.25%; position:relative; display:block; width: 100%"}
+<iframe width="100%" height="100%" src="https://agec211-stat-methods.github.io/agec211-lecture/module4-eda" frameborder="0" allowfullscreen style="position:absolute; top:0; left: 0">
+
+</iframe>
+:::
+
+#### Presentation keyboard shortcuts
+
+::: text-line-space
+<ul>
+
+<li>Use <kbd>←</kbd> and <kbd>→</kbd> to navigate through the slides</li>
+
+<li>Use <kbd>F</kbd> to toggle full screen</li>
+
+<li>Use <kbd>O</kbd> to view an overview of all slides</li>
+
+<li>Use <kbd>?</kbd> to see a list of other shortcuts</li>
+
+</ul>
+:::
