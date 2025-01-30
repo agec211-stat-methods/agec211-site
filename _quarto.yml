@@ -33,7 +33,7 @@ website:
           - href: "m6-correlations.qmd"
             text: "Module 6: Correlations"
           - href: "m7-regression.qmd"
-            text: "Module 6: Multiple regression analysis"
+            text: "Module 7: Multiple regression analysis"
 
 
 
