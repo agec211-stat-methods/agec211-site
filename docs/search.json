@@ -4,33 +4,21 @@
     "href": "m7-regression.html",
     "title": "Tests on means",
     "section": "",
-    "text": "Introduction to linear regression\nModel estimation and interpretation\nDetecting and handling multicollinearity\nRegression diagnostics\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
-    "crumbs": [
-      "Topics",
-      "Module 7: Multiple regression analysis"
-    ]
+    "text": "Introduction to linear regression\nModel estimation and interpretation\nDetecting and handling multicollinearity\nRegression diagnostics\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts"
   },
   {
     "objectID": "m5-tests-on-means.html",
     "href": "m5-tests-on-means.html",
     "title": "Tests on means",
     "section": "",
-    "text": "Introduction to hypothesis testisng\nParametric vs non-parametric tests\nIndependent sample t-tests\nPaired sample t-test\nOne-way ANOVA\nChi-square test\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
-    "crumbs": [
-      "Topics",
-      "Module 5: Tests on means"
-    ]
+    "text": "Introduction to hypothesis testisng\nParametric vs non-parametric tests\nIndependent sample t-tests\nPaired sample t-test\nOne-way ANOVA\nChi-square test\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts"
   },
   {
     "objectID": "m3-reproducible-report.html",
     "href": "m3-reproducible-report.html",
     "title": "Reproducible report with Quarto in R",
     "section": "",
-    "text": "Introduction to Quarto\nQuarto document elements\nExercise: generating reports\nImproving report\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
-    "crumbs": [
-      "Topics",
-      "Module 3: Reproducible reports with Quarto"
-    ]
+    "text": "Introduction to Quarto\nQuarto document elements\nExercise: generating reports\nImproving report\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts"
   },
   {
     "objectID": "m1-intro-r.html",
@@ -48,7 +36,7 @@
     "href": "m1-intro-r.html#exercises",
     "title": "Intro to R programming",
     "section": "Exercises",
-    "text": "Exercises\n\nInstall R and RStudio on your computer.\nDownload the entire folder 00-module-intro-r from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.\nDownload the entire folder 00-module-intro-r from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.\nBefore the class start, open the RStudio and paste the following code in the console to install the required packages. Just click the clipboard icon to copy the code.\n\n\n## install required packages\ninstall.packages(c(\"janitor\", \"readxl\", \"haven\", \"tidyverse\", \"skimr\"))\n\n\n\n\n\n\n\nImportant\n\n\n\nPlease make sure to install the required packages before the class starts, as we may not have a secure internet connection. If you encounter any issues, please let me know.",
+    "text": "Exercises\n\nInstall R and RStudio on your computer.\nDownload the entire folder 00-module-intro-r from the Google Drive link. For the meantime, keep the folder in your computer and wait for further instructions during the class.\nBefore the class start, open the RStudio and paste the following code in the console to install the required packages. Just click the clipboard icon to copy the code.\n\n\n## install required packages\ninstall.packages(c(\"janitor\", \"readxl\", \"haven\", \"tidyverse\", \"skimr\"))\n\n\n\n\n\n\n\nImportant\n\n\n\nPlease make sure to install the required packages before the class starts, as we may not have a secure internet connection. If you encounter any issues, please let me know.",
     "crumbs": [
       "Topics",
       "Module 1: Intro to R programming"
@@ -59,7 +47,7 @@
     "href": "index.html",
     "title": "AgEc 211: Statistical Methods",
     "section": "",
-    "text": "Class schedule: TBA  Instructor: Christopher Llones  e-mail: christopher.llones@vsu.edu.ph  Pre-requisites: Basic statistics or COI  Course credits: 3 units \n\n\nCourse description\nApplication of statistical concept and tools in analyzing economic phenomena.\n\n\nCourse objectives\n\nPerform basic operation using R programming as the main statistical software\nDemonstrate how to conduct descriptive analysis using statistical software and check necessary assumptions\nDemonstrate how to conduct descriptive analysis using stistical\nConduct parametric and non-parametric tests\nTest economic relationship using correlation / regression approach using appropriate statistical software and interpret results\nApply appropriate statistical methods to investigate actual economic problems.\n\n\n\nCourse outline\n\n\n\n\n\n\n\n\n\nWeek\nTopics\nLessons\nDescriptions\n\n\n\n\n1\nIntroduction to R programming\n\nOverview of R and RStudio interface\nReading data in R\nData wrangling\n\n\nInstall R and RStudio\nFamiliarize with the user interface of R and RStudio\nData importation and basic data transformation\n\n\n\n2\nIntroduction to data visualization using ggplot2\n\nGrammar of graphics\nDatasets and mapping\nGeometries\nStatistical transformation and plotting distribution\nPosition adjustment and scales\nCoordinates and themes\nFacets and custom plots\n\n\nLearn the foundation of ggplot2.\nData preparation for visualization, mapping variables to appropriate visual elements.\nSelect the most suitable visual representation using geometric objects.\nGain insights into data distributions using statistical summaries and plots.\nControl the layout and scale of visual elements to optimize clarity and readability.\nCreate complex visualizations with multiples panels to highlight specific patterns and trends.\n\n\n\n3\nReproducible report with quarto in R\n\nIntroduction to Quarto\nQuarto documents elements\nExercise: generating reports\nImproving reports\n\n\nLearn about Quarto and its benefits for creating reproducible reports.\nUnderstand the structure and components of quarto documents.\nRender and enhance readability of data analysis reports.",
+    "text": "Class schedule: TBA  Instructor: Christopher Llones  e-mail: christopher.llones@vsu.edu.ph  Pre-requisites: Basic statistics or COI  Course credits: 3 units \n\n\nCourse description\nApplication of statistical concept and tools in analyzing economic phenomena.\n\n\nCourse objectives\n\nPerform basic operation using R programming as the main statistical software\nDemonstrate how to conduct descriptive analysis using statistical software and check necessary assumptions\nDemonstrate how to conduct descriptive analysis using stistical\nConduct parametric and non-parametric tests\nTest economic relationship using correlation / regression approach using appropriate statistical software and interpret results\nApply appropriate statistical methods to investigate actual economic problems.\n\n\n\nCourse outline\n\n\n\n\n\n\n\n\nTopics\nLessons\nDescription\n\n\n\n\nModule 1: Introduction to R Programming\n\nInstalling R and RStudio\nR Basics\nWorking with R scripts\nImporting data\nBasic data wrangling\n\n\nLearn to install and configure R and RStudio.\nUnderstand and apply basic R syntax including data types, vectors, and data frames.\nDevelop proficiency in writing, saving, and executing R scripts.\nImport dataset and prepare them for analysis.\nClean and transform data .\n\n\n\nModule 2: Introduction to data visualization using ggplot2\n\nUnderstanding grammar of graphics\nDataset and mapping\nGeometries\nStatistical transformation and plotting distribution\nPosition adjustment and scales\n\n\nUnderstand the grammar of graphics and its role in structuring visualizations.\nCreate and customize basic plots including histograms, bar charts, boxplots, and scatterplot.\nMap variables to visual aesthetics such as color, shape, and size to enhance interpretability.\nApply faceting techniques to produce multi-panel plots for comparative analysis.\nModify plot themes and coordinate systems to improve clarity and accessibility.\nExport visualizations for use in reports, presentations, policy briefs, and others.\n\n\n\nModule 3: Reproducible report with Quarto in R\n\nIntroduction to Quarto\nCreating Quarto document\nEmbedding R code\nFormatting Outputs\nExporting reports\n\n\nLearn to create dynamic, reproducible documents using Quarto and markdown syntax.\nEmbed R code and inline calculations within narrative text to integrate analysis and interpretation.\nFormat outputs such as tables and plots for professional presentation.\nRender reports to multiple formats including HTML, PDF, and Word for diverse audiences.\nDevelop the ability to produce transparent, replicable research outputs for academic and policy contexts.\n\n\n\nModule 4: survey research design\n\nMethods of data collection\nSampling design in surveys\nMeasurement issues in survey research\nQuestionnaire construction\nBasics of interviewing\nCreating a codebook\nData entry\n\n\nDiscuss the various methods of data collection including survey, observation and experimental methods.\nDiscuss different ways for gathering a sample; random and non-random sampling. Discuss rudimentary formulas for sample size calculation.\nDiscuss the issues in assigning numbers to represent quantities of attributes. Discuss the various scales of measurement. Discuss criteria in constructing good measurement of variables: reliablity and validity.\nDiscuss the various advantages and disadvantages of interviews and questionnaire over other methods of data collection.\nDiscuss the do’s and dont’s of an interviewer’s conduct.\nDiscuss the importance of creating a codebook for survey data.\nDiscuss rudimentary of data entry.\n\n\n\nModule 5: exploratory data analysis\n\nRudiments of EDA\nCharts and tables\nMeasures of central tendency\nDispersion, parameters, skewness and kurtosis\nContingency tables and scatter plot\n\n\nDiscuss EDA as the first step in data analysis.\nDiscuss various techniques in summarizing and visualizing data.\nDiscuss the various measures of central tendency and data location.\nDiscuss the relevance of various dispersion, parameters, skewness and kurtosis.\nDiscuss the relevance of contingency tables and scatterplots for summarizing and visualizing data.\n\n\n\nModule 6: test on means\n\nParametric test on means\nNon-parametric test on means\n\n\nDiscuss the various t-tests and ANOVA and perform them on a sample data with R.\nPerform various non-parametric equivalent of the t-tests and ANOVA on sample data with R.\n\n\n\nModule 7: correlation and regression analysis\n\nCorrelation analysis\nReview of Regression analysis\n\n\nDiscuss the various types of correlation analysis procedures. Interpret the correlation coefficient.\nDiscuss the various aspects of regression model building.\n\n\n\nModule 8: limited-dependent variable models\n\nReview of binary dependent regression\nExtension to the logit model.\nCensored and truncated regression models.\nCount dependent variable models.\n\n\nDiscuss the various aspects of the logit and probit.\nDiscuss the multinomial and ordinal logit models.\nDiscuss the Tobit regression model for censored data and truncated regression models.\nDiscuss Poisson and Negative Binomial regression models in the regression analysis of count-dependent variable models.\n\n\n\nModule 9: multivariate statistical analysis\n\nCluster analysis\nPrincipal component analysis\nExploratory factor analysis\nConfirmatory factor anlysis\nStructural equation modelling\n\n\nUnderstand and apply different clustering methods. Analyze and evaluate the quality and effectiveness of different clusters in dataset.\nLearn to perform and interpret principal component analysis to reduce the dimensionality of dataset. Develop the ability to identify and retain significant components for simplifying data without losing critical information.\nIdentify and estimate underlying factor structures within a set of observed variables.\nUnderstand model-based factor anlaysis and develop proficiency in evaluating model fit and making necessary adjustments to improve analysis.\nApply SEM techniques to understand relationships among variables and construct theoretical models.",
     "crumbs": [
       "Home"
     ]
@@ -115,21 +103,13 @@
     "href": "m4-eda.html",
     "title": "Exploratory data analysis (EDA)",
     "section": "",
-    "text": "Overview of EDA\nCentrality and variability\nAmounts and proportions\nComparisons\nTrends\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
-    "crumbs": [
-      "Topics",
-      "Module 4: Exploratory data analysis (EDA)"
-    ]
+    "text": "Overview of EDA\nCentrality and variability\nAmounts and proportions\nComparisons\nTrends\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts"
   },
   {
     "objectID": "m6-correlations.html",
     "href": "m6-correlations.html",
     "title": "Correlations",
     "section": "",
-    "text": "Understand concept of correlation\nCompute and interpret different correlation coefficient\nVisualize correlation pattern\nTest for statistical significance of correlation\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts",
-    "crumbs": [
-      "Topics",
-      "Module 6: Correlations"
-    ]
+    "text": "Understand concept of correlation\nCompute and interpret different correlation coefficient\nVisualize correlation pattern\nTest for statistical significance of correlation\n\nView slides in new window\n\n\n\n\n\nPresentation keyboard shortcuts\n\n\n\nUse ← and → to navigate through the slides\n\n\nUse F to toggle full screen\n\n\nUse O to view an overview of all slides\n\n\nUse ? to see a list of other shortcuts"
   }
 ]

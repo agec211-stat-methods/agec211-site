@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,12 +71,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-55680aca77aab0919a7a914f8007907e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-0bffb38eed614b1816087a74ca3eb0e2.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -173,35 +173,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </li>
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./m3-reproducible-report.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 3: Reproducible reports with Quarto</span></a>
-  </div>
-</li>
+ <span class="menu-text">Module 3: Reproducible reports with Quarto</span>
+  </li>
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./m4-eda.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 4: Exploratory data analysis (EDA)</span></a>
-  </div>
-</li>
+ <span class="menu-text">Module 4: Exploratory data analysis (EDA)</span>
+  </li>
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./m5-tests-on-means.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 5: Tests on means</span></a>
-  </div>
-</li>
+ <span class="menu-text">Module 5: Tests on means</span>
+  </li>
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./m6-correlations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 6: Correlations</span></a>
-  </div>
-</li>
+ <span class="menu-text">Module 6: Correlations</span>
+  </li>
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./m7-regression.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Module 7: Multiple regression analysis</span></a>
-  </div>
-</li>
+ <span class="menu-text">Module 7: Multiple regression analysis</span>
+  </li>
       </ul>
   </li>
     </ul>
@@ -285,7 +270,6 @@ Use <kbd>?</kbd> to see a list of other shortcuts
 <ol type="1">
 <li><p>Install <a href="https://cran.r-project.org/bin/windows/base/">R</a> and <a href="https://posit.co/download/rstudio-desktop/">RStudio</a> on your computer.</p></li>
 <li><p>Download the entire folder <code>00-module-intro-r</code> from the <a href="https://drive.google.com/drive/folders/10EwKKO1SxHdZSWWO1ko2WUFIOIRZM0HU?usp=sharing">Google Drive link</a>. For the meantime, keep the folder in your computer and wait for further instructions during the class.</p></li>
-<li><p>Download the entire folder <code>00-module-intro-r</code> from the <a href="https://drive.google.com/drive/folders/1Db2q9YPFU9Ik_a6ygmxgKHS3lpvtNxCu?usp=sharing">Google Drive link</a>. For the meantime, keep the folder in your computer and wait for further instructions during the class.</p></li>
 <li><p>Before the class start, open the RStudio and paste the following code in the console to install the required packages. Just click the clipboard icon to copy the code.</p></li>
 </ol>
 <div class="cell">
@@ -536,8 +520,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -648,7 +630,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
