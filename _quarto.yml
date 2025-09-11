@@ -27,13 +27,17 @@ website:
           - href: ""
             text: "Module 3: Reproducible reports with Quarto"
           - href: ""
-            text: "Module 4: Exploratory data analysis (EDA)"
+            text: "Module 4: Survey research design"
           - href: ""
-            text: "Module 5: Tests on means"
+            text: "Module 5: Exploratory data analysis (EDA)"
           - href: ""
-            text: "Module 6: Correlations"
+            text: "Module 6: Tests on means"
           - href: ""
-            text: "Module 7: Multiple regression analysis"
+            text: "Module 7: Correlation and regression analysis"
+          - href: ""
+            text: "Module 8: Limited dependent variables"
+          - href: ""
+            text: "Module 9: Multivariate statistical analysis"
 
 
 
