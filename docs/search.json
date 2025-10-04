@@ -53,6 +53,61 @@
     ]
   },
   {
+    "objectID": "01-assignment-1-netflix-data.html",
+    "href": "01-assignment-1-netflix-data.html",
+    "title": "AgEc 211",
+    "section": "",
+    "text": "Course Title: Agec211: Statistical methods  Instructor: Christopher Llones  Assignment: Netflix Dataset Analysis in R  Due Date: 9 October 2025",
+    "crumbs": [
+      "Topics",
+      "Module 1 assignment"
+    ]
+  },
+  {
+    "objectID": "01-assignment-1-netflix-data.html#objective",
+    "href": "01-assignment-1-netflix-data.html#objective",
+    "title": "AgEc 211",
+    "section": "Objective",
+    "text": "Objective\nThis assignment will assess your ability to apply R programming skills—specifically using the dplyr package and the pipe operator (%&gt;%)—to explore and analyze a real-world dataset. You will work with the Netflix Movies & TV Shows dataset to answer questions using code.",
+    "crumbs": [
+      "Topics",
+      "Module 1 assignment"
+    ]
+  },
+  {
+    "objectID": "01-assignment-1-netflix-data.html#instructions",
+    "href": "01-assignment-1-netflix-data.html#instructions",
+    "title": "AgEc 211",
+    "section": "Instructions",
+    "text": "Instructions\n\nUse R and the dplyr package to answer each question.\nSubmit your R script file (.R) with your code and outputs.\nUse the pipe operator (%&gt;%) for all data manipulations.\nYou may use additional packages like tidyr or stringr if needed.\nEnsure your code is clean, commented, and reproducible.\n\n\n\n\n\n\n\nDataset and files\n\n\n\n\nAccess the dataset and R script templder from the agec211-assignment1 folder.\nSubmit your completed R script file (.R) by the due date and upload using this link: Submission Link.",
+    "crumbs": [
+      "Topics",
+      "Module 1 assignment"
+    ]
+  },
+  {
+    "objectID": "01-assignment-1-netflix-data.html#questions",
+    "href": "01-assignment-1-netflix-data.html#questions",
+    "title": "AgEc 211",
+    "section": "Questions",
+    "text": "Questions\nPart 1: Data exploration\n\nHow many rows and columns are in the dataset?\nList all unique types of content (e.g., Movie, TV Show).\nHow many titles were released in 2020?\n\nPart 2: filtering and summarising\n\nFilter the dataset to show only TV Shows released in India. How many are there?\nFind the top 5 most common ratings.\nWhich year had the most titles added to Netflix?\n\nPart 3: grouping and aggregation\n\nGroup the data by type and count how many entries each type has.\nGroup the data by release_year and summarize the number of titles released per year.\nWhich country has produced the most content on Netflix?\n\nAdvanced Filtering\n\nFilter the dataset to show all Movies with a duration longer than 100 minutes.\nFind all titles directed by ‘Steven Spielberg’.\nList all titles with the genre containing ‘Documentary’.\n\nBonus Challenge\n\nCreate a new column that extracts the number of seasons for TV Shows. Then, find the average number of seasons.\nWhich actor appears most frequently across all titles?",
+    "crumbs": [
+      "Topics",
+      "Module 1 assignment"
+    ]
+  },
+  {
+    "objectID": "01-assignment-1-netflix-data.html#grading-rubrics",
+    "href": "01-assignment-1-netflix-data.html#grading-rubrics",
+    "title": "AgEc 211",
+    "section": "Grading rubrics",
+    "text": "Grading rubrics\n\n\n\n\n\n\n\n\n\n\nCriteria\nExcellent (5pts)\nGood (4pts)\nFair (2-3 pts)\nNeeds improvement (0-1 pt)\n\n\n\n\nCode accuracy\nAll answers are correct and match expected outputs.\nMost answers are correct with minor errors.\nSeveral answers are incorrect or incomplete.\nMany answers are missing or incorrect.\n\n\nUse of dplyr Functions\nConsistently uses appropriate dplyr verbs (filter, mutate, summarise, etc.).\nUses dplyr functions correctly in most cases.\nUses some dplyr functions but inconsistently or incorrectly.\nRarely uses dplyr or misuses functions.\n\n\nPipe Operator Usage (%&gt;%)\nPipe operator is used fluently and correctly throughout.\nMostly correct usage with occasional syntax issues.\nUsed sporadically or with frequent errors.\nNot used or used incorrectly.\n\n\nData Manipulation & Filtering\nDemonstrates strong understanding of filtering, grouping, and summarizing.\nShows good grasp with minor gaps.\nBasic filtering and grouping attempted but lacks depth.\nLittle to no meaningful data manipulation.\n\n\nInsight & Interpretation\nProvides thoughtful insights or observations where applicable.\nSome interpretation is present.\nMinimal interpretation or unclear reasoning.\nNo interpretation or irrelevant commentary.\n\n\nBonus Challenge (Q13–Q14)\nCompleted with correct logic and creative approach.\nAttempted with mostly correct logic.\nAttempted but contains errors or lacks clarity.\nNot attempted or incorrect.\n\n\nReproducibility\nCode runs without errors and produces expected results.\nMinor issues but generally reproducible.\nSome errors prevent full reproducibility.\nCode fails to run or produces major errors.",
+    "crumbs": [
+      "Topics",
+      "Module 1 assignment"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
