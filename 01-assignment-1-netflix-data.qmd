@@ -27,7 +27,7 @@ This assignment will assess your ability to apply R programming skills—specifi
 ::: callout-tip
 ## Dataset and files
 
-1. Access the dataset and R script templder from the [agec211-assignment1](https://drive.google.com/drive/folders/1F6hD1r-roRAdwbJiM7tzIdOsZFpW36mX?usp=sharing) folder.
+1. Access the dataset and R script template from the [agec211-assignment1](https://drive.google.com/drive/folders/1F6hD1r-roRAdwbJiM7tzIdOsZFpW36mX?usp=sharing) folder.
 
 2. Submit your completed R script file (.R) by the due date and upload using this link: [Submission Link]().
 :::
@@ -53,9 +53,9 @@ This assignment will assess your ability to apply R programming skills—specifi
 
 **Part 3: grouping and aggregation**
 
-7.  Group the data by type and count how many entries each type has.
+7.  Group the data by `type` and count how many entries each type has.
 
-8.  Group the data by release_year and summarize the number of titles released per year.
+8.  Group the data by `release_year` and summarize the number of titles released per year.
 
 9.  Which country has produced the most content on Netflix?
 
