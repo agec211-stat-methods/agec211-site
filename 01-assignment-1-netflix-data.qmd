@@ -27,7 +27,7 @@ This assignment will assess your ability to apply R programming skills—specifi
 
 1.  Access the dataset and R script template from the [agec211-assignment1](https://drive.google.com/drive/folders/1F6hD1r-roRAdwbJiM7tzIdOsZFpW36mX?usp=sharing) folder.
 
-2.  Submit your completed R script file (.R) by the due date and upload using this link: [Submission Link](https://forms.gle/D9V75YiS9LYT6pzk8).
+2.  Submit your completed R script file (.R) by the due date and upload using this link: [Submission Link](https://forms.gle/oBTQRgUcUefX9SRQ7).
 :::
 
 ## Questions
