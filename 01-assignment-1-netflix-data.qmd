@@ -6,11 +6,9 @@ title: ""
 
 **Course Title**: Agec211: Statistical methods <br> **Instructor**: Christopher Llones <br> **Assignment**: Netflix Dataset Analysis in R <br> **Due Date**: 9 October 2025
 
-
 ## Objective
 
 This assignment will assess your ability to apply R programming skills—specifically using the `dplyr` package and the pipe operator (`%>%`)—to explore and analyze a real-world dataset. You will work with the Netflix Movies & TV Shows dataset to answer questions using code.
-
 
 ## Instructions
 
@@ -27,11 +25,10 @@ This assignment will assess your ability to apply R programming skills—specifi
 ::: callout-tip
 ## Dataset and files
 
-1. Access the dataset and R script template from the [agec211-assignment1](https://drive.google.com/drive/folders/1F6hD1r-roRAdwbJiM7tzIdOsZFpW36mX?usp=sharing) folder.
+1.  Access the dataset and R script template from the [agec211-assignment1](https://drive.google.com/drive/folders/1F6hD1r-roRAdwbJiM7tzIdOsZFpW36mX?usp=sharing) folder.
 
-2. Submit your completed R script file (.R) by the due date and upload using this link: [Submission Link]().
+2.  Submit your completed R script file (.R) by the due date and upload using this link: [Submission Link](https://forms.gle/D9V75YiS9LYT6pzk8).
 :::
-
 
 ## Questions
 
@@ -67,14 +64,11 @@ This assignment will assess your ability to apply R programming skills—specifi
 
 12. List all titles with the genre containing 'Documentary'.
 
-
 **Bonus Challenge**
 
 13. Create a new column that extracts the number of seasons for TV Shows. Then, find the average number of seasons.
 
 14. Which actor appears most frequently across all titles?
-
-
 
 ## Grading rubrics
 
